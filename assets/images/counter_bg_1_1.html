@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav-icon.png">
+    <meta name="google-site-verification" content="p3FMAU0hzyKt7N4ae1bDe5n7f13JRy2ocZMKBTwhO-I" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/infrastructure.css">
+    <link rel="shortcut icon" href="assets/images/logo-02.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Text:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: auto;
+        }
+
+        button:hover {
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .container p {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .container button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(to right, #ff4081, #42a5f5);
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .container button:hover {
+            background: linear-gradient(to right, #42a5f5, #ff4081);
+        }
+
+        .sec_center {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-style {
+            white-space: nowrap;
+            font-size: 400px;
+            background: linear-gradient(25deg, rgba(5, 5, 5, 1), rgba(0, 255, 17, 1));
+            color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+
+        .back {
+            padding: 10px;
+            border-radius: 10px;
+            width: 700px;
+            margin: 40px 10px;
+            border-radius: 50px;
+            border-color: black;
+            border: 1px;
+            background: black;
+            color: white;
+            width: 35%;
+        }
+    </style>
+    <style>
+        .font_size_35 {
+            font-size: 35px !important;
+        }
+
+        .img_width {
+            width: 456px;
+        }
+
+        .text-style {
+            white-space: nowrap;
+            font-size: 400px;
+        }
+
+        .sec_center {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-p {
+            font-size: 100px;
+            /* line-height: 550px; */
+            text-align: center;
+        }
+
+        .back {
+            padding: 10px;
+            border-radius: 10px;
+            width: 700px;
+            margin: 40px 10px;
+        }
+
+        @media (max-width:768px) {
+            .font_size_35 {
+                font-size: 35px !important;
+            }
+
+            .img_width {
+                width: 300px;
+            }
+
+            .text-style {
+                white-space: nowrap;
+                font-size: 200px;
+            }
+
+            .sec_center {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .text-p {
+                font-size: 100px;
+                /* line-height: 550px; */
+                text-align: center;
+            }
+
+            .back {
+                padding: 10px;
+                border-radius: 10px;
+                width: 700px;
+                margin: 40px 10px;
+            }
+        }
+
+        @media (max-width:480px) {
+            .font_size_35 {
+                font-size: 35px !important;
+            }
+
+            .img_width {
+                width: 176px;
+            }
+
+            .text-style {
+                white-space: nowrap;
+                font-size: 200px;
+            }
+
+            .sec_center {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .text-p {
+                font-size: 50px;
+                /* line-height: 550px; */
+                text-align: center;
+            }
+
+            .back {
+                padding: 10px;
+                border-radius: 10px;
+                width: 400px;
+                margin: 40px 10px;
+            }
+        }
+
+        @media (max-width:400px) {
+            .font_size_35 {
+                font-size: 35px !important;
+            }
+
+            .img_width {
+                width: 176px;
+            }
+
+            .text-style {
+                white-space: nowrap;
+                font-size: 150px;
+            }
+
+            .sec_center {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .text-p {
+                font-size: 50px;
+                /* line-height: 550px; */
+                text-align: center;
+            }
+
+            .back {
+                padding: 10px;
+                border-radius: 10px;
+                width: 350px;
+                margin: 40px 10px;
+            }
+        }
+
+        .sec_center {
+            background-image: url(../assets/images/notfound.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* .color_white{
+        color:white;
+    } */
+    </style>
+</head>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L77PQKJFPS');
+</script>
+
+<body>
+    <header class="activepage" id="header"></header>
+    <section class="sec_center">
+        <h1 class="text-style">404</h1><br>
+        <h1 class="color_white">Page Not Found</h1>
+        <p class="color_white">Your message has been sent!</p>
+        <button onclick="window.location.href='/'" class="back" style="border-radius:50px;">BACK TO HOME</button>
+    </section>
+    <a href="https://wa.me/+917486009723" class="btn-whatsapp-pulse">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <footer id="footer" class="bg-dark-green text-white ptb-56"></footer>
+
+    <script type="text/javascript"></script>
+    <div class="contentDiv" id="content">
+        <button class="back-to-top" type="button"></button>
+    </div>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
